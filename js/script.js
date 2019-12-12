@@ -1,5 +1,19 @@
-let p1 = 'O';
-let p2 = 'X';
+let currentP = "O";
+var numTimes = 0;
+let gameEnd = false;
+function performLogic( buttonId, tileId){
+  $(buttonId).hide(tileId);
+  $(tileId).append(currentP);
+  changecurrentP();
+}
+function changecurrentP (){
+
+if(currentP === "O"){
+      currentP = "X"
+  } else{
+      currentP = "O"
+  }
+}
 
 
 
